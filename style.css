@@ -1,0 +1,223 @@
+* {
+  background-color: #b7efc5;
+  /*background-color: #d8f3dc;*/
+  box-sizing: border-box;
+}
+.logo {
+  padding: 10px 10px;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  height: 10vh;
+  width: 100%;
+  margin: 0;
+}
+.titulo {
+  font-family: "Press Start 2P", cursive;
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+.contenedor-titulo {
+  width: 80%;
+}
+.principal {
+  min-height: 80vh;
+  display: flex;
+  width: 100%;
+}
+.contenedor-texto {
+  width: 60%;
+  /*background-color: aliceblue;*/
+  padding: 50px 50px;
+}
+.contenedor-mensaje {
+  width: 40%;
+  padding: 50px 30px;
+}
+.texto {
+  width: 100%;
+  height: 70%;
+  border: none;
+  resize: none;
+  font-size: 1.8em;
+  text-align: center;
+  font-weight: bold;
+}
+.mensaje {
+  width: 100%;
+  height: 70%;
+  border: none;
+  resize: none;
+  background-image: url(images/alien.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1.5em;
+}
+.texto,
+.mensaje:focus {
+  outline: none;
+  cursor: hidden;
+  text-transform: lowercase;
+}
+.texto::placeholder {
+  text-transform: capitalize;
+}
+.info {
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+}
+.info2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+  font-weight: bold;
+}
+.info3 {
+  font-size: 1.2em;
+  text-align: center;
+  color: #386641;
+  margin: 0;
+}
+.contenedor-botones {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /*background-color: aqua;*/
+}
+.btn-enc,
+.btn-dec,
+#reload,
+.btn-C {
+  padding: 1em 1.5em;
+  margin: 1em;
+  border-radius: 20px;
+  border: 2px solid #06d6a0;
+  font-weight: bold;
+}
+.btn-enc,
+.btn-dec,
+.btn-C,
+#reload:hover {
+  cursor: pointer;
+}
+.btn-enc {
+  color: white;
+  background-color: #2a9d8f;
+}
+.btn-dec {
+  color: white;
+  background-color: #023047;
+}
+#reload {
+  border-radius: 20px;
+  border: 2px solid black;
+  background-color: #ef476f;
+  color: white;
+}
+.logo-linkedin,
+.logo-github {
+  width: 5%;
+}
+.autor {
+  display: inline-block;
+  font-size: 1.2em;
+  padding-left: 100px;
+  padding-right: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+}
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+}
+.logo-linkedin,
+.logo-github {
+  display: inline-block;
+  height: 95%;
+  width: 100%;
+}
+.contenedor-link,
+.contenedor-git {
+  height: 100%;
+  margin: 0 1%;
+}
+.cont-copy {
+  position: relative;
+  bottom: 30%;
+  display: flex;
+  justify-content: center;
+  visibility: hidden;
+}
+.btn-C {
+  position: relative;
+  bottom: 15%;
+  left: 40%;
+  visibility: hidden;
+}
+
+.cont-redes {
+  display: flex;
+  width: 9%;
+}
+
+@media (max-width: 680px) {
+  .principal {
+    display: flex;
+    flex-direction: column;
+  }
+  .contenedor-texto,
+  .contenedor-mensaje {
+    width: 100%;
+  }
+  .contenedor-mensaje {
+    position: relative;
+    padding-top: 10px;
+  }
+  .btn-C {
+    position: absolute;
+    bottom: 100%;
+  }
+  .logo {
+    display: none;
+  }
+  .contenedor-titulo {
+    width: 100%;
+  }
+  footer {
+    align-items: center;
+    
+  }
+  .btn-enc,
+  .btn-dec,
+  #reload,
+  .btn-C {
+    padding: 1em 1.5em;
+    margin: 0;
+    border-radius: 20px;
+    border: 2px solid #06d6a0;
+    font-weight: normal;
+  }
+  .autor {
+    display: inline-block;
+    font-size: 1.2em;
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    width: 70%;
+    padding: 0 20px;
+  }
+  .cont-redes {
+    display: flex;
+    width: 30%;
+  }
+}
