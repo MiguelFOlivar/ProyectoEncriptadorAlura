@@ -6,6 +6,10 @@
 .logo {
   padding: 10px 10px;
 }
+.logo:hover {
+  transition: 1500ms;
+  rotate: 360deg;
+}
 header {
   display: flex;
   flex-direction: row;
@@ -71,10 +75,11 @@ header {
   text-align: center;
   font-size: 1em;
   font-weight: bold;
+  color: #121113;
 }
 .info2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.1rem;
   margin: 0;
   font-weight: bold;
 }
@@ -101,11 +106,10 @@ header {
   border: 2px solid #06d6a0;
   font-weight: bold;
 }
-.btn-enc,
-.btn-dec,
-.btn-C,
-#reload:hover {
+.btn-enc:hover, .btn-dec:hover, .btn-dec:hover, .btn-C:hover, #reload:hover {
+  background-color: #55a630;
   cursor: pointer;
+  color: #081c15;
 }
 .btn-enc {
   color: white;
