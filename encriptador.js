@@ -78,4 +78,5 @@ reload.addEventListener("click", (_) => {
   // el _ es para indicar la ausencia de parametros
   //codigo recuperado de: https://developer.mozilla.org/es/docs/Web/API/Location/reload
   location.reload();
+  mensaje.value = "";
 });
